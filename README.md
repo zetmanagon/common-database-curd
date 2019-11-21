@@ -736,13 +736,6 @@ api说明文档使用swagger
 |com.gemantic.search.controller.BaseSearchController<T extends ElasticIndex>|服务端提供的web服务，所有的controller的基类|
    
 ## 规范
-所有的model都必须有的字段
-
-|实体属性名|	属性类型|	数据库字段名|	字段类型|	说明|
-|---|---
-|id|Long|	id|bigint|主键|
-|createAt|Long	|create_at	|bigint	|创建时间|
-|updateAt|Long|update_at|bigint|更新时间|
 
 ## 例子
 本例使用Rest的请求配置，tcp的配置官方说明已过时
