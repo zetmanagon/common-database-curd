@@ -740,11 +740,9 @@ api说明文档使用swagger
 
 |实体属性名|	属性类型|	数据库字段名|	字段类型|	说明|
 |---|---
-|id|String|	_id|keyword|主键|
-|elasticScore|float|	_score|float|es得分|
-|snippets|Map| 无|无|返回高亮字段|
-|createAt|Long	|createAt	|long	|创建时间|
-|updateAt|Long|updateAt|long|更新时间|
+|id|Long|	id|bigint|主键|
+|createAt|Long	|create_at	|bigint	|创建时间|
+|updateAt|Long|update_at|bigint|更新时间|
 
 ## 例子
 本例使用Rest的请求配置，tcp的配置官方说明已过时
