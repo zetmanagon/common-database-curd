@@ -1,5 +1,5 @@
-# mysql,mongodb,elasticsearch面向对象的增删改查微服务框架
-
+# 结构及流程
+![image](https://raw.githubusercontent.com/zetmanagon/common-database-curd/master/images/%E6%9C%8D%E5%8A%A1%E7%BB%93%E6%9E%84.png)
 
 # mysql微服务框架
 common-db-core、common-db-lib
