@@ -740,7 +740,7 @@ api说明文档使用swagger
 
 |实体属性名|属性类型|数据库字段名|字段类型|说明|
 |---|---
-|id|String||||_source不存储，映射es的_id|
+|id|String|||_source不存储，映射es的_id|
 |elasticScore|float|||_source不存储，映射es的_score|
 |snippets|Map<String,String>| | |_source不存储，映射es的高亮结果|
 |createAt|Long|createAt|long|_source存储，创建时间|
