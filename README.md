@@ -738,13 +738,13 @@ api说明文档使用swagger
 ## 规范
 所有的model都必须有的字段
 
-|实体属性名|属性类型|数据库字段名|字段类型|说明|
+|实体属性名|属性类型|字段类型|说明|
 |---|---
-|id|String|||_source不存储，映射es的_id|
-|elasticScore|float|||_source不存储，映射es的_score|
-|snippets|Map<String,String>| | |_source不存储，映射es的高亮结果|
-|createAt|Long|createAt|long|_source存储，创建时间|
-|updateAt|Long|createAt|long|_source存储，更新时间|
+|id|String|keyword|_source不存储，映射es的_id|
+|elasticScore|float|float|_source不存储，映射es的_score|
+|snippets|Map<String,String>|无|_source不存储，映射es的高亮结果|
+|createAt|Long|long|_source存储，创建时间|
+|updateAt|Long|long|_source存储，更新时间|
 
 ## 例子
 本例使用Rest的请求配置，tcp的配置官方说明已过时
