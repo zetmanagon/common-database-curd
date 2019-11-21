@@ -269,16 +269,16 @@ public class TaskController extends BaseController<Task> implements TaskClient {
     }
 }
 ```
-### 服务提供
+#### 服务提供
 ok，服务启动后查看swagger,我们看看都提供了哪些服务？
 ![image](https://raw.githubusercontent.com/zetmanagon/common-database-curd/master/images/mysql.png)
 
-## 客户端调用
-### application.properties配置
+### 客户端调用
+#### application.properties配置
 ```Properties
 ai.db.service.url=http://ai-db-service:31001
 ```
-### server
+#### server
 ```Java
 package com.gemantic;
 
@@ -588,16 +588,16 @@ public class CorpusController extends BaseController<Corpus> implements CorpusCl
 }
 
 ```
-### 服务提供
+#### 服务提供
 ok，服务启动后查看swagger,我们看看都提供了哪些服务？
 ![image](https://raw.githubusercontent.com/zetmanagon/common-database-curd/master/images/mongo.png)
 
-## 客户端调用
-### application.properties配置
+### 客户端调用
+#### application.properties配置
 ```Properties
 ai.doc.service.url=http://ai-doc-service:31001
 ```
-### server
+#### server
 ```Java
 package com.gemantic;
 
@@ -623,7 +623,7 @@ public class Server {
 }
 
 ```
-### http配置
+#### http配置
 ```Java
 package com.gemantic.config;
 
@@ -692,7 +692,7 @@ public class HttpConfig {
 }
 ```
 
-### 接口使用
+#### 接口使用
 ```Java
 @Resource
 private CorpusClient corpusClient;
@@ -740,11 +740,11 @@ api说明文档使用swagger
 
 |实体属性名|属性类型|数据库字段名|字段类型|说明|
 |---|---
-|id|String|_source不存储，映射es的_id|||主键|
-|elasticScore|float||_source不存储，映射es的_score|
-|snippets|Map<String,String>||_source不存储，映射es的高亮结果|
-|createAt|Long|_source存储|long|创建时间|
-|updateAt|Long|_source存储|long|更新时间|
+|id|String||||_source不存储，映射es的_id|
+|elasticScore|float|||_source不存储，映射es的_score|
+|snippets|Map<String,String>| | |_source不存储，映射es的高亮结果|
+|createAt|Long|createAt|long|_source存储，创建时间|
+|updateAt|Long|createAt|long|_source存储，更新时间|
 
 ## 例子
 本例使用Rest的请求配置，tcp的配置官方说明已过时
@@ -1009,16 +1009,16 @@ public class EventController extends BaseSearchController<Event> {
 }
 
 ```
-### 服务提供
+#### 服务提供
 ok，服务启动后查看swagger,我们看看都提供了哪些服务？
 ![image](https://raw.githubusercontent.com/zetmanagon/common-database-curd/master/images/es.png)
 
-## 客户端调用
-### application.properties配置
+### 客户端调用
+#### application.properties配置
 ```Properties
 index.eventengine.service.url = http://index-eventengine-service:31001
 ```
-### server
+#### server
 ```Java
 package com.gemantic;
 
@@ -1044,7 +1044,7 @@ public class Server {
 }
 
 ```
-### http配置
+#### http配置
 ```Java
 package com.gemantic.config;
 
@@ -1113,7 +1113,7 @@ public class HttpConfig {
 }
 ```
 
-### 接口使用
+#### 接口使用
 ```Java
 @Resource
 private EventClient eventClient;
