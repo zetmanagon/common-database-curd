@@ -735,8 +735,6 @@ api说明文档使用swagger
 |com.gemantic.search.repository.impl.BaseSearchRestRepositoryImpl<T extends ElasticIndex>|服务端http的方式请求es的仓库实现接口,repository实现的基类|
 |com.gemantic.search.controller.BaseSearchController<T extends ElasticIndex>|服务端提供的web服务，所有的controller的基类|
    
-## 规范
-
 ## 例子
 本例使用Rest的请求配置，tcp的配置官方说明已过时
 ### core编写
